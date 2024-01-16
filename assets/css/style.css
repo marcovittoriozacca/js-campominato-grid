@@ -52,46 +52,6 @@ header nav .btn{
     cursor: pointer;
 }
 
-/* main elements style */
-main{
-    height: calc(100vh - (60px + 48px));
-    background-color: lightgreen;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.inner-grid{
-    width: 43%;
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-
-.box{
-    aspect-ratio: 1;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.3rem;
-    font-weight: bold;
-    border: 1px solid black;
-    cursor: pointer;
-}
-
-.boxEasy{
-    width: calc(100% / 7);
-}
-.boxNormal{
-    width: calc(100% / 9);
-}
-.boxHard{
-    width: calc(100% / 10);
-}
-
 .difficulty{
     display: flex;
     align-items: center;
@@ -111,6 +71,49 @@ select{
     border: 1px solid gray;
     cursor: pointer;
 }
+
+/* main elements style */
+main{
+    height: calc(100vh - (60px + 48px));
+    background-color: lightgreen;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.inner-grid{
+    width: 40%;
+
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.box{
+    aspect-ratio: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.boxEasy{
+    width: calc(100% / 7);
+}
+.boxNormal{
+    width: calc(100% / 9);
+}
+.boxHard{
+    width: calc(100% / 10);
+}
+
+
 
 .active{
     background-color: #7fdaeb;

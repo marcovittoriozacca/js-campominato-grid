@@ -56,7 +56,7 @@ btnPlay.addEventListener('click', function(){
         }
 
         //all'interno del div stamperemo il valore dell'iterazione, quindi da 1 a 100
-        box.innerText = i;
+        box.innerHTML = `<span>${i}</span>`;
         
         //ogni casella avrà un evento al click che aggiungerà e toggliera tramite TOGGLE la classe active a ogni specifica casella grazie al this.
         box.addEventListener('click', function(){
