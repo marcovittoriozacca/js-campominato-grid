@@ -77,17 +77,22 @@ main{
     height: calc(100vh - (60px + 48px));
     background-color: lightgreen;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
     
 }
+#grid{
+    max-width: 2000px;
 
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
 .inner-grid{
     width: 40%;
 
     display: flex;
     flex-wrap: wrap;
+
     
 }
 
