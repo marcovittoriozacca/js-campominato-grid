@@ -3,14 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* general styling */
 html *{
     /* border: 1px solid red; */
     font-family: sans-serif;
 }
 
+footer,
+header{
+    background-color: white;
+}
+
 /* Boolean logo style */
 figure{
-    width: 80px;
+    width: 60px;
 }
 figure img{
     width: 100%;
@@ -48,15 +54,44 @@ header nav .btn{
 
 /* main elements style */
 main{
-    height: calc(100vh - (80px + 58px));
-    background-color: #5EB1BF;
+    height: calc(100vh - (60px + 48px));
+    background-color: lightgreen;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.inner-grid{
+    width: 43%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.box{
+    width: calc(100% / 10);
+    aspect-ratio: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.active{
+    background-color: #7fdaeb;
 }
 
 
 /* footer style */
 footer div p{
     font-weight: bold;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 footer .container{
     width: 95%;
