@@ -3,7 +3,65 @@
     padding: 0;
     box-sizing: border-box;
 }
+html *{
+    /* border: 1px solid red; */
+    font-family: sans-serif;
+}
 
-html{
-    background-color: red;
+/* Boolean logo style */
+figure{
+    width: 80px;
+}
+figure img{
+    width: 100%;
+    display: block;
+}
+#title{
+    display: flex;
+    align-items: center;
+}
+#title h1{
+    font-size: 2.3rem;
+    text-transform: capitalize;
+}
+
+/* general navbar style */
+header .container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .btn{
+    padding: 5px 40px;
+    font-size: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+/* main elements style */
+main{
+    height: calc(100vh - (80px + 58px));
+    background-color: #5EB1BF;
+}
+
+
+/* footer style */
+footer div p{
+    font-weight: bold;
+    padding: 20px 0;
+}
+footer .container{
+    width: 95%;
+    margin: 0 auto;
+}
+footer i{
+    margin-inline: 3px;
 }
