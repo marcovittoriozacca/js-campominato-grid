@@ -71,7 +71,6 @@ main{
 }
 
 .box{
-    width: calc(100% / 10);
     aspect-ratio: 1;
 
     display: flex;
@@ -80,6 +79,36 @@ main{
     font-size: 1.3rem;
     font-weight: bold;
     border: 1px solid black;
+    cursor: pointer;
+}
+
+.boxEasy{
+    width: calc(100% / 7);
+}
+.boxNormal{
+    width: calc(100% / 9);
+}
+.boxHard{
+    width: calc(100% / 10);
+}
+
+.difficulty{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.difficulty .choice{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+select{
+    width: 200px;
+    padding: 3px;
+    font-size: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid gray;
     cursor: pointer;
 }
 
