@@ -5,26 +5,30 @@ const difficulty = document.getElementById('difficultySelection');
 
 //al click del bottone viene creata la griglia in base alla difficoltà
 btnPlay.addEventListener('click', function(){
+    console.clear();
     gridHtml.innerHTML='';
 
     //x conterrà il numero di caselle
-    //choice conterrà la difficoltà scelta dall'utente 
+    //choice conterrà il nome della classe che imposta il numero di elementi in una sola riga
 
-    let choice = difficulty.value;
+    let choice = '';
 
     let x;
 
-    switch(choice){
+    switch(difficulty.value){
         case 'easy':
             x = 49;
+            choice = 'boxEasy';
             break;
 
         case 'normal':
             x = 81;
+            choice = 'boxNormal';
             break;
 
         case 'hard':
             x = 100;
+            choice = 'boxHard';
             break;
 
     }
@@ -37,24 +41,9 @@ btnPlay.addEventListener('click', function(){
         let box = document.createElement('div');
         
         //al div aggiungiamo la classe box che servirà a dare l'aspetto alla casella
-        box.classList.add('box');
-
-        //aggiungiamo il numero di "colonne" in base alla difficolta, così da creare la griglia in modo opportuno
-
-        switch(choice){
-            case 'easy':
-                box.classList.add('boxEasy');
-                break;
-                
-            case 'normal':
-                box.classList.add('boxNormal');
-                break;
+        //aggiungiamo anche la variabile choice che contiene una delle 3 classi basate sulla difficoltà 
+        box.classList.add('box', choice);
     
-            case 'hard':
-                box.classList.add('boxHard');
-                break;
-        }
-
         //all'interno del div stamperemo il valore dell'iterazione, quindi da 1 a 100
         box.innerHTML = `<span>${i}</span>`;
         
