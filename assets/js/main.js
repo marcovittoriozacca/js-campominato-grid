@@ -2,7 +2,8 @@ const gridHtml = document.querySelector('.inner-grid');
 const btnPlay = document.getElementById('btnPlay');
 
 btnPlay.addEventListener('click', function(){
-    
+    gridHtml.innerHTML='';
+
     for(let i = 1; i <= 100; i++){
     
         let box = document.createElement('div');
