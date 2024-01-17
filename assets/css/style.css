@@ -109,13 +109,13 @@ main{
 }
 
 .boxEasy{
-    width: calc(100% / 7);
+    width: calc(100% / 10);
 }
 .boxNormal{
     width: calc(100% / 9);
 }
 .boxHard{
-    width: calc(100% / 10);
+    width: calc(100% / 7);
 }
 
 
